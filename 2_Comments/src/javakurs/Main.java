@@ -4,7 +4,6 @@
 package javakurs;
 
 /**
- *
  * @author Alexander Mack (github.com/alxmck)
  */
 public class Main {

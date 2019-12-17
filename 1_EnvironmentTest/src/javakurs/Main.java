@@ -4,7 +4,6 @@
 package javakurs;
 
 /**
- *
  * @author Alexander Mack (github.com/alxmck)
  */
 public class Main {
@@ -14,6 +13,7 @@ public class Main {
         
         // In diesem Beispiel wird lediglich Text mithilfe
         // der Methode println ausgegeben:
+        
         System.out.println("Hallo Welt!\n\n\n");
         
     }
