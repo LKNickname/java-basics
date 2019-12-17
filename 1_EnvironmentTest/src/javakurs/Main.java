@@ -9,14 +9,12 @@ package javakurs;
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+    // Jedes Programm startet in der main Methode
     public static void main(String[] args) {
-        // TODO code application logic here
         
+        // In diesem Beispiel wird lediglich Text mithilfe
+        // der Methode println ausgegeben:
         System.out.println("Hallo Welt!\n\n\n");
-        
         
     }
     
