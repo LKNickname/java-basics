@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Das ist kein Kommentar, sondern eine Textausgabe.");
         
         // Wichtig ist nur zu verstehen, dass Kommentare nicht ausgefuehrt oder sonst eine Auswirkung haben.
-        // Sie helfen einfach nur, das Programmierte besser zu verstehen.
+        // Sie helfen einfach nur, den Quellcode besser zu verstehen.
         
     }
     

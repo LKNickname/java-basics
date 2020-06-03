@@ -23,7 +23,7 @@ public class Main {
         System.out.println("Die maximale Geschwindkeit ist...");
         if (iAutoMax == 30) { 
             // Wenn iAutoMax den Wert 30 hat, dann fuehre die
-            // Anweisungen zwischen den {} aus..
+            // Anweisungen im Codeblock zwischen den {} aus..
             System.out.println("sehr langsam. :-/");
         } 
         

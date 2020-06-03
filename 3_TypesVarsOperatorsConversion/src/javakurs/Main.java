@@ -48,7 +48,7 @@ public class Main {
         System.out.println("Huch, der int hat sich veraendert: " + iIntVariable);
         
         
-        // long: Speichern genauso Ganzzahlen. Nur mit einem groesseren Wertebereich:  -9223372036854775807 and 9223372036854775808 
+        // long: Speichern genauso Ganzzahlen. Nur mit einem groesseren Wertebereich: zwischen -9223372036854775807 und 9223372036854775808 
         long lLongVariable = 65;
         
         System.out.println("Die long Variable hat den Wert: " + lLongVariable); 
@@ -78,6 +78,48 @@ public class Main {
         
         int iMod = 12 % 5; // Modulo Operator
         System.out.println("Restwert: " + iMod);
+        
+        // Um die Schreibweise zu verkürzen, wird häufig mit Verbundoperatoren gearbeitet.
+        
+        // Substrahieren in der ausführlichen Schreibweise:
+        iDiff = iDiff - 3;
+        // Oder verkürzt mithilfe von Verbundoperatoren:
+        iDiff -= 3;
+        
+        System.out.println("Differenz: " + iDiff);
+        
+        // Addieren in der ausführlichen Schreibweise:
+        iSum = iSum + 3;
+        // Oder verkürzt mithilfe von Verbundoperatoren:
+        iSum += 3;
+        System.out.println("Summe: " + iSum);
+        
+        // Multiplizieren in der ausführlichen Schreibweise:
+        iProd = iProd * 3; 
+        // Oder verkürzt mithilfe von Verbundoperatoren:
+        iProd *= 3;
+        System.out.println("Produkt: " + iProd);
+        
+        // Dividieren in der ausführlichen Schreibweise:
+        iQuot = iQuot / 3; 
+        // Oder verkürzt mithilfe von Verbundoperatoren:
+        iQuot /= 3;
+        System.out.println("Quotient: " + iQuot);
+        
+        // Innerhalb von Schleifen geht es noch kürzer. 
+        // Das Herauf- bzw. Herabsetzen der Variable um den Wert 1 kann mithilfe von Präfix- oder Postfix-Inkrement und -Dekrement stattfinden:
+        
+        // "Normales" erhöhen einer Int-Variable um 1:
+        iSum = iSum + 1;
+        // Erhöhen mit einem Postfix-Inkrement:
+        iSum++;
+        System.out.println("Inkrement: " + iSum);
+        
+        // "Normales" herabsetzen einer Int-Variable um 1:
+        iSum = iSum - 1;
+        // Erhöhen mit einem Postfix-Inkrement:
+        iSum--;
+        System.out.println("Dekrement: " + iSum);
         
         
         // Und man kann Variablen auch umwandeln, d.h. konvertieren:
@@ -111,7 +153,6 @@ public class Main {
         // einen string in einen float
         fFloatVariable = Float.parseFloat(sFloatToString);
         System.out.println("Wert von fFloatVariable: " + fFloatVariable);
-        
         
     }
     
