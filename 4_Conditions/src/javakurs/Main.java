@@ -37,12 +37,12 @@ public class Main {
         
         // Bedingungen werden typischerweise mit relationalen Operatoren ueberprueft:
         
-        // if (a == b) {..       Prüft ob die Werte von a und b gleich sind
-        // if (a != b) {..       Prüft ob die Werte von a und b ungleich sind
-        // if (a > b) {..       Prüft ob der Wert von a groesser b ist
-        // if (a < b) {..       Prüft ob der Wert von a kleiner b ist
-        // if (a >= b) {..       Prüft ob der Wert von a groesser gleich b ist
-        // if (a <= b) {..       Prüft ob der Wert von a kleiner gleich b ist
+        // if (a == b) {..       Prueft ob die Werte von a und b gleich sind
+        // if (a != b) {..       Prueft ob die Werte von a und b ungleich sind
+        // if (a > b) {..       Prueft ob der Wert von a groesser b ist
+        // if (a < b) {..       Prueft ob der Wert von a kleiner b ist
+        // if (a >= b) {..       Prueft ob der Wert von a groesser gleich b ist
+        // if (a <= b) {..       Prueft ob der Wert von a kleiner gleich b ist
         
         // Zudem koennen Bedingungen noch weiter verschachtelt werden:
         
