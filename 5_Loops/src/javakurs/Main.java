@@ -124,6 +124,39 @@ public class Main {
           // hier das Ende des Anweisungsblocks der äußersten for-Schleife ist. 
         
         
+        // Das Verhalten von Schleifen kann auch innerhalb der Schleifen beeinflusst werden.
+        // Mithilfe von "continue" können die restlichen Anweisungen im aktuellen Schleifendurchlauf übersprungen werden. "break" beendet die Schleife. 
+        
+        // Beispiel für continue:
+        
+        for(int ii = 0; ii < 10; ii++) {
+            if (ii == 3) { 
+                // Wenn die Zaehlvariable ii den Wert 3 enthaelt, sollen die Anweisungen in der Schleife
+                // fuer diesen Durchlauf nicht ausgefuehrt werden.
+                continue;
+            }
+            
+            // Eine kuerzere Schreibweise:
+            if (ii == 5) continue; // Wenn nach der Bedingung nur eine Anweisung folgt, kann auf die geschweiften Klammern {} verzichtet werden.
+            
+            System.out.println("Bsp. continue: " + ii);
+            
+        }
+        
+        
+        // Beispiel für break:
+          
+        for(int ii = 0; ii < 10; ii++) {
+            
+            if (ii == 3) {
+                // Sobald die Variable ii den Wert 3 enthaelt
+                // moechten wir die Schleife beenden.
+                break;
+            }
+            
+            System.out.println("Bsp. break: " + ii);
+        }
+          
     }
     
 }
