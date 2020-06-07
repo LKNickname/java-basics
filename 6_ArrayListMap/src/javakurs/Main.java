@@ -3,6 +3,8 @@
  */
 package javakurs;
 
+import java.util.*;
+
 /**
  *
  * @author Alexander Mack (github.com/alxmck)
@@ -88,7 +90,100 @@ public class Main {
         
         // Flexibler sind ArrayList und HashMap. Diese werden spaeter besprochen - wenn klar ist, was Klassen und Methoden sind.
         
+        // Bsp ArrayList
+        // benoetigt:
+        // import java.util.*;
         
+        // Initialisieren
+        List<String> aStringList = new ArrayList<String>();
+        
+        // Elemente hinzufuegen
+        aStringList.add("Text 1");
+        aStringList.add("Text 2");
+        
+        // Liste ausgeben:
+        System.out.println(aStringList);
+        
+        // Elemente an bestimmter Position ausgeben:
+        System.out.println(aStringList.get(1));
+        
+        for(int ii = 0; ii < aStringList.size(); ii++) {
+            System.out.println("List, Element an Pos " + ii + ": " + aStringList.get(ii));
+        }
+        
+        // Element an einer bestimmten Position einfuegen (0 = erstes Element)
+        aStringList.add(0, "Text 3");
+        
+        // Liste ausgeben
+        System.out.println(aStringList);
+        
+        // Eine andere Liste einfuegen
+        
+        // Zweite Liste vorbereiten:
+        List<String> aZweiteListe = new ArrayList<String>();
+        aZweiteListe.add("Weiteres Element 1");
+        aZweiteListe.add("Weiteres Element 2");
+        
+        // Zweite Liste in die erste Liste einfuegen:
+        aStringList.addAll(aZweiteListe);
+        
+        // Liste ausgeben
+        System.out.println(aStringList);
+        
+        // Liste in ein Array wandeln:
+        String[] aStringArray = aStringList.toArray(new String[]{});
+        System.out.println("Insgesamt " + aStringArray.length + " Elemente, Inhalt Element 2: " + aStringArray[1]);
+        
+        // Element an Position 1 aus Liste loeschen:
+        aStringList.remove(0);
+        System.out.println(aStringList);
+        
+        // Bestimmte Elemente aus Liste loeschen:
+        aStringList.remove("Text 2");
+        System.out.println(aStringList);
+        
+        // Gesamte Liste leeren:
+        aStringList.clear();
+        System.out.println(aStringList);
+        
+        // Bsp HashMap
+        
+        // Initialisieren einer HashMap
+        Map<String, String> aMap = new HashMap<String, String>();
+        
+        // Elemente hinzufuegen:
+        aMap.put("Key A", "Value A");
+        aMap.put("Key B", "Value B");
+        aMap.put("Key C", "Value C");
+        
+        // Ausgabe der Map:
+        System.out.println(aMap);
+        
+        // Zugriff auf Elemente
+        if (aMap.containsKey("Key A")) {
+            System.out.println("Wert fuer \"Key A\": " + aMap.get("Key A"));
+        }
+        
+        // Zugriff auf nicht definierte Elemente / Keys:
+        System.out.println("Wert fuer \"Key G\": " + aMap.get("Key G"));
+        System.out.println("Wert fuer \"Key G\": " + aMap.getOrDefault("Key G", "Nicht definiert"));
+        
+        // Ueber alle Elemente iterieren
+        for(String sKey : aMap.keySet()) {
+            System.out.println("Map Key: " + sKey + ", Value: " + aMap.get(sKey));
+        }
+        
+        // Elemente loeschen:
+        aMap.remove("Key B");
+        
+        // Map ausgeben
+        System.out.println(aMap);
+        
+        // Inhalt ersetzen / aendern
+        aMap.replace("Key C", "Value Z");
+        
+        // Map ausgeben
+        System.out.println(aMap);
         
     }
     
