@@ -1,0 +1,2 @@
+Eine neue Datei!
+		Textinhalt schreiben	Textinhalt schreiben;1;2;3
