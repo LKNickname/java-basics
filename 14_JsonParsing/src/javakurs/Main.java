@@ -1,5 +1,6 @@
 /*
  *  Written by Alexander Mack (github.com/alxmck). Have fun using the code where ever you want.
+ *  Attention: used 3rd party lib - see details http://www.java2s.com/Code/Jar/j/Downloadjsonsimple11jar.htm
  */
 package javakurs;
 
