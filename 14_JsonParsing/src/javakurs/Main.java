@@ -3,9 +3,13 @@
  */
 package javakurs;
 
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
-
+import java.io.FileReader; 
+import java.util.Iterator; 
+import java.util.Map; 
+  
+import org.json.simple.JSONArray; 
+import org.json.simple.JSONObject; 
+import org.json.simple.parser.*; 
 
 /**
  *
@@ -21,20 +25,23 @@ public class Main {
         try {
         
             // Vgl. StdBib S. 800ff.
+            // https://www.geeksforgeeks.org/parse-json-java/
+            // http://www.java2s.com/Code/Jar/j/Downloadjsonsimple11jar.htm
 
-            String sJson = "{'name':'Max','Alter':99, 'Wohnort' : {'PLZ':'89898', 'name':'Wunschburg'}}";
+            String sJson = "{\"name\":\"Max\",\"alter\":99, \"wohnort\" : {\"plz\":\"89898\", \"name\":\"Wunschburg\"}}";
 
-            // JavaScript Code erstellen
-            String sJsCode = "oObj = " + sJson + ";";
+            // parsing file "JSONExample.json" 
+            Object oObj = new JSONParser().parse(sJson); 
 
-            // JS Code ausfuehren
-            ScriptEngine oJsEngine = new ScriptEngineManager().getEngineByName("JavaScript");
-            oJsEngine.eval(sJsCode);
-        
-            // Object laden
-            JSObject oJsObj = (JSObject) oJsEngine.get("oObj");
+            // typecasting obj to JSONObject 
+            JSONObject oJsonObj = (JSONObject) oObj; 
+
+            // getting firstName and lastName 
+            String sName = (String) oJsonObj.get("name"); 
+            System.out.println("name: " + sName);
             
-            
+            Map aWohnort = ((Map)oJsonObj.get("wohnort")); 
+            System.out.println("name: " + aWohnort.get("name"));
             
         } catch (Exception e) {
             System.out.println("Fehler: " + e.getMessage());
