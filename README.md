@@ -1,2 +1,2 @@
 # java-basics
-Small progamms / scripts for a Java introduction.
+Small progams / scripts for a Java introduction.
