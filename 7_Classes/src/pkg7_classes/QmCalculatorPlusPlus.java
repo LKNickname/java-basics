@@ -9,6 +9,11 @@ package pkg7_classes;
  */
 public class QmCalculatorPlusPlus extends QmCalculatorPlus implements Schnittstelle {
     
+    // Konstanten:
+    // (public/private) static final TYPE NAME = VALUE;
+    
+    public static final int FAKTOR_CM_M = 100;
+    
     QmCalculatorPlusPlus() {
         
     }
@@ -16,9 +21,9 @@ public class QmCalculatorPlusPlus extends QmCalculatorPlus implements Schnittste
     public int getVolumenInCm() {
         
         // 1 mtr = 100cm
-        int iHoeheCm = getHoehe() * 100;
-        int iBreiteCm = getBreite() * 100;
-        int iLaengeCm = getHoehe() * 100;
+        int iHoeheCm = getHoehe() * FAKTOR_CM_M;
+        int iBreiteCm = getBreite() * FAKTOR_CM_M;
+        int iLaengeCm = getHoehe() * FAKTOR_CM_M;
         
         int iVolCm = iHoeheCm * iBreiteCm * iLaengeCm;
         
